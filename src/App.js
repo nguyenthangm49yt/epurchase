@@ -12,7 +12,7 @@ import AddIcon from '@material-ui/icons/Add';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 import 'antd/dist/antd.css';  
-import { Pagination } from 'antd';
+ 
  
 function App() {
   return (
@@ -82,7 +82,7 @@ function App() {
                     <div className="product--result_header">
                       <p>11,000 Kết quả</p>
                       <span className="pagination-bar">
-                        <Pagination className="pagination" size="medium" total={50} showSizeChanger   />
+                        
                         <p>Kết quả</p>
                       </span>
                     </div>

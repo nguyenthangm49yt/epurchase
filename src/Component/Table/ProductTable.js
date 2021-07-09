@@ -5,7 +5,7 @@ import { Tag } from 'antd';
 import './table-style.css'
 import {Product} from "./Product";
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
- 
+import { Pagination } from 'antd';
 const Name = (props) =>{
   const {name, productCode, pathImg} =  props;
   return (
@@ -63,7 +63,7 @@ const columns = [
 const data = [];
 const dataProduct = []
 
-for (let i = 0; i < 8; i++) {
+for (let i = 0; i < 80; i++) {
   dataProduct.push(  {
     id: i,
     name: 'macbook',
@@ -80,7 +80,7 @@ for (let i = 0; i < dataProduct.length; i++) {
   data.push({
     key: i,
     name: <Name name={dataProduct[i].name} 
-            productCode={dataProduct[i].productCode} 
+            productCode={dataProduct[i].productCode + i} 
             pathImg= {process.env.PUBLIC_URL + "/images/product1.png"}>
               
           </Name>,
@@ -135,7 +135,7 @@ class ProductTable extends React.Component {
         rowSelection={rowSelection} 
         columns={columns} 
         dataSource={data}
-        pagination={false} 
+        pagination={<Pagination style={{padding:1000}} size="medium" total={50} showSizeChanger   />} 
         scroll={{ y: 657}}
         />
       </div>

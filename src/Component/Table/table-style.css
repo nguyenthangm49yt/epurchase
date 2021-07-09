@@ -3,6 +3,11 @@
 .ant-table-body{
     
     overflow-y:scroll;
+  
+}
+.ant-table-container{
+    border-radius: 9px;
+    padding-bottom: 5px;
 }
  .ant-table .ant-table-container::after {
     position: absolute;
@@ -91,4 +96,11 @@ table tr th.ant-table-selection-column, table tr td.ant-table-selection-column {
     width: 48px;
     height: 48px;
     border-radius: 6px;
+}
+
+.ant-table-pagination.ant-pagination{
+    position: absolute;
+    top: -122px;
+    right: 91px;
+    margin: 46px 0;
 }
