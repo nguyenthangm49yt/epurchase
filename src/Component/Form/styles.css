@@ -1,0 +1,165 @@
+.modal{
+
+    color: #3F8CFF;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    padding-top: 0px;
+    padding-left: 6.67px;
+    font-size: 11px; 
+    display: flex;
+}
+
+.modal span{
+
+  padding: 4px 0 0 4px;
+}
+
+.modal:hover{
+
+    color: #304c65;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+.input-text , .input-select {
+    margin: 20px 20px 0 4px;
+ 
+}
+.input-text p, .input-select p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #606060;
+}
+.input-select{
+    width: 220px;
+}
+.status {
+    display: flex;
+    flex-direction: row;
+    margin-right: 182px;
+    margin-top: 41px;
+}
+
+
+.status p{
+    position:absolute;
+    margin-left: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #333333;
+    
+}
+ 
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    border-radius: 0px;
+}
+.ant-select{
+    border-radius: 0;
+}
+
+.ant-modal-header{
+    border-bottom: none;
+    border-radius: 10px;
+}
+.ant-modal-title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    
+    color: #3F8CFF;
+}
+
+.ant-modal-title::before{
+    content: "";
+    top: 14px;
+    height: 52px;
+    left: 0;
+    width: 2px;
+    position: absolute;
+    background: #3F8CFF;
+}
+
+
+.ant-modal-footer{
+    border-top: none;
+    text-align: unset;
+    padding: 50px 0 19px 29px;
+}
+
+.ant-modal-content{
+    border-radius: 10px;
+}
+
+.ant-modal-footer .ant-tag{
+    height: 40px;
+    padding: 7px 12px 7px 8px;
+    margin-right: 25.5px;
+    
+
+}
+
+.save-tag{
+    background: #3F8CFF;
+    border-radius: 7px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+}
+
+.save-tag:hover{
+    background: #2571e4;
+ 
+    cursor: pointer;
+     
+}
+.cancel-tag{
+    background: #FFFFFF;
+    /* Red */
+    color: #E91616;
+    border: 1px solid #E91616;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+}
+
+.cancel-tag:hover{
+    border: 1px solid #e64040;
+    background: #f5f5f5;
+    color: #e64040;
+    cursor: pointer;
+     
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+    color: #304c65;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+.ant-menu-sub.ant-menu-inline{
+    background-color: #fff ;
+
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: none;
+}

@@ -1,0 +1,94 @@
+
+
+.ant-table-body{
+    
+    overflow-y:scroll;
+}
+ .ant-table .ant-table-container::after {
+    position: absolute;
+    width: 300px;
+}
+.ant-table-body::-webkit-scrollbar {
+    width: 8px;
+}
+.ant-table-body::-webkit-scrollbar-button {
+    width: 8px;
+    height:5px;
+}
+.ant-table-body::-webkit-scrollbar-track {
+    background:#FFFFFF;
+    border: thin solid FFFFFF;
+  
+}
+.ant-table-body::-webkit-scrollbar-thumb {
+    background:#999;
+    border: thin solid gray;
+    border-radius:10px;
+}
+.ant-table-body::-webkit-scrollbar-thumb:hover {
+    background:#7d7d7d;
+}           
+
+.ant-table-thead > tr > th {
+    background: rgba(245, 245, 250, 0.4);
+    font-weight: bold;
+    font-size: 13px;
+    border-bottom: 0em;
+
+}
+
+
+ 
+table tr th.ant-table-selection-column, table tr td.ant-table-selection-column {
+    padding-right: 8px;
+    padding-left: 43px;
+    text-align: center;
+}
+
+.ant-table-tbody > tr > td {
+    border-bottom: none
+}
+
+.ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    position: absolute;
+    
+    width: 0px;
+   
+}
+
+.ant-pagination-item-active a {
+    background-color: #3F8CFF;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.ant-pagination-item {
+    border: none;
+}
+
+.ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link {
+    border: none;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 7px;
+    background-color: #EFF2FE;
+    border: none;
+}
+
+.name-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.name-container .name-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+.img-product{
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+}

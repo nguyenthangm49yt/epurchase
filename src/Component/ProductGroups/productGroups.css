@@ -1,0 +1,55 @@
+.PG-container{
+    display: flex;
+    flex-direction: column;
+}
+
+ .header{
+     display: flex;
+     justify-content: space-between;
+     padding: 15px 15px 15px 26px;
+     border-bottom: 1px solid #f9f9f9;
+ }
+
+
+ .header--title{
+    font-weight: bold;
+    font-size: 13px;
+    color: #35455C;
+}
+ .header--action  {
+     display: flex;  
+     flex-direction: row;
+     color: #3F8CFF;
+     font-size: 11px;
+ }
+ .header--action > p{
+     padding: 3px 0 0 6px;
+ }
+ .find {
+    
+    margin: 20px 20px 0 26px;
+   
+ }
+ .find-icon {
+    position: relative;
+     
+    margin-left: -20px;
+ }
+
+ .tree-list{
+     margin: 20px 0 0 26px;
+ }
+
+ .childLeaf-container{
+     display: flex;
+     justify-content: space-between;
+     height:24px;
+ }
+
+ .childNode-more-action-icon{
+   
+    margin: 0 0 0 10px;
+   
+    
+ }
+ 

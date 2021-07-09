@@ -1,38 +1,258 @@
 .App {
-  text-align: center;
+  padding: 0;
+  font-family: 'Montserrat';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 100vw;
+  height: 100vh;
+ 
   display: flex;
+  float: left;
+}
+.left{
+  position: fixed;
+  
+  z-index: 3;
+  display: flex;
+  width: 280px;
+  height: 100%;
+  background: #FFFFFF;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0px 0px 20px #E3E4EB;
+}
+.left img{
+  margin: 26px 0 26px 0;
+  width: 219px;
+  height: 27px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.right{
+   padding-left: 280px;
+   width: 100%;
+   display: flex;
+   height: 100%;
+  
+   flex-direction: column;
+
+}
+ 
+.category-data--1{
+  width: 238px;
+  height: 65px;
+  background-color: #EEEEEE;
+  border-radius: 7px;
+  margin-top: 13px;
+}
+.category-data--1 .p {
+   
+  padding: 0px;
+} 
+.category-data--1 .title {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  color: #3F8CFF;
+  position: relative;
+  top: 15px;
+  left: 16px;
+  margin: 0px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category-data--1 .sub-title {
+  font-family: 'Montserrat';
+  font-size: 10px;
+  color: #333333;
+  position: relative;
+  top: 15px;
+  left: 16px;
+  margin: 0px;
+}
+.category-data{
+  width: 100%;
+  max-height: calc(100vh - 26px) ;
+  overflow-y:scroll;
+  padding-left: 21px;
+}
+.category-data::-webkit-scrollbar {
+  width: 5px;
+}
+.category-data::-webkit-scrollbar-button {
+  width: 5px;
+  height:5px;
+}
+.category-data::-webkit-scrollbar-track {
+  background:#FFFFFF;
+  border: thin solid FFFFFF;
+
+}
+.category-data::-webkit-scrollbar-thumb {
+  background:#c1c1c1;
+  border: thin solid #c1c1c1;
+  border-radius:10px;
+}
+.category-data::-webkit-scrollbar-thumb:hover {
+  background:#a8a8a8;
+}  
+.category-data--list{
+  margin-top: 15px;
+ 
+}
+
+.page-header{
+  position: fixed;
+
+  width: calc(100vw - 280px);
+  z-index: 2;
+  display: flex;
+  height: 80px;
+  background-color: #FFFFFF;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow:  0px 0px 8px rgba(0, 0, 0, 0.135216);
+  padding: 3px ;
+  
+}
+
+.page-content{
+  
+  height: 100vh;
+  overflow-y: auto;
+  padding : 104px 34px 0px 40px;
+  background: #f9f9f9;
+  
+}
+
+.content{ 
+  display: flex;
+}
+
+.product-groups{
+  
+  width: 372px;
+  height: fit-content;
+  padding-bottom: 41px;
+  left: 314px;
+  top: 155px;
+  background-color:  #FFFFFF;
+  border-radius: 7px;
+}
+
+.product-groups--detail{
+  margin-left: 28px;
+  width: calc(100% - 372px);
+  height: 850px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+.product--action{
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.product--action_left{
+  display: flex;
+  flex-direction: row;
+}
+
+.product--action_left .search{
+  width: 533px;
+  height: 48px;
+  background-color: #FFFFFF;
+  
+}
+
+.product--action_left .filter{
+  width: 116px;
+  display: flex;
+  border-radius: 7px;
+  background-color: #FFFFFF;
+  margin-left: 19.5px;
+  padding-left: 18px;
+  color: #3F8CFF;
+}
+
+.product--action_left p{
+ 
+  margin: 12px 20px 12px 9px;
+
+}
+
+.product--result{
+  margin-top: 24px;
+  background-color:aquamarine;
+}
+
+.product--action_right{
+  display: flex;
+  flex-direction: row;
+}
+
+.product--action_right span{
+  display: flex;
+  border-radius: 7px;
+   
+  margin-left: 19px;
+  padding: 12px 0px 12px 0px;
+}
+
+.product--action_right  p {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.add-product{
+  background-color: #3F8CFF;
+  width: 194px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.actions{
+  background-color: #FFFFFF;
+  color: #3F8CFF;
+  width: 121px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.actions p {
+  padding-left: 10px;
+}
+.product--result{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+
+}
+
+.product--result_header{
+  display: flex;
+  justify-content: space-between;
+  margin: 36px 25px 0px 25px;
+}
+
+.product--result_header > p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #3F8CFF;
+}
+
+.pagination-bar{
+   display: flex;
+
+}
+.pagination-bar .pagination{
+  margin:0 8px 0 0 ;
+}
+
+.pagination-bar p{
+  padding-top: 5px;
+
 }
