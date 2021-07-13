@@ -48,8 +48,14 @@
 
  .childNode-more-action-icon{
    
-    margin: 0 0 0 10px;
+    margin: 0 20px 0 10px;
    
     
  }
- 
+ .ant-tree .ant-tree-treenode {
+     width: 100%;
+ }
+ .ant-tree .ant-tree-node-content-wrapper {
+
+    width: -webkit-fill-available;
+ }

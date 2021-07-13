@@ -12,7 +12,7 @@ import AddIcon from '@material-ui/icons/Add';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 import 'antd/dist/antd.css';  
- 
+import data from './data'; 
  
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
             <div className="content">
           {/* Nhóm sản phẩm */}
               <div className="product-groups">
-                  <ProductGroups text='bla' />
+                  <ProductGroups text='bla' data={data} />
               </div>
               
               <div className="product-groups--detail">

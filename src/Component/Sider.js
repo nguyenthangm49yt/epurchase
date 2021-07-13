@@ -37,7 +37,7 @@ class Sider extends React.Component {
         defaultOpenKeys={['sub1']}
         mode="inline"
       >
-        <SubMenu key="sub1" icon={<ViewAgendaOutlinedIcon />} title="Danh mục dữ liệu">
+        <SubMenu key="sub0" icon={<ViewAgendaOutlinedIcon />} title="Danh mục dữ liệu">
          
              
 

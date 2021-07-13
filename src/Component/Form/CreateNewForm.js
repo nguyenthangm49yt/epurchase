@@ -4,23 +4,17 @@ import './styles.css';
 import Input from '@material-ui/core/Input';
 import ViewCarouselOutlinedIcon from '@material-ui/icons/ViewCarouselOutlined';
 import ChatOutlinedIcon from '@material-ui/icons/ChatOutlined';
-import KeyboardArrowDownOutlinedIcon from '@material-ui/icons/KeyboardArrowDownOutlined';
-import InputLabel from '@material-ui/core/InputLabel';
-import NativeSelect from '@material-ui/core/NativeSelect';
-import FormControl from '@material-ui/core/FormControl';
 import { Select } from 'antd';
 import { Tag, Divider } from 'antd';
-
 import {
   CheckCircleOutlined,
   SyncOutlined,
   CloseCircleOutlined,
   
 } from '@ant-design/icons';
-import AddCircleOutlineOutlinedIcon from '@material-ui/icons/AddCircleOutlineOutlined';
+ 
  
 
- 
 const InputText = (props)=>{
   const {title, placeholder, icon} = props;
   return (
@@ -84,40 +78,26 @@ const InputSelect = (props)=>{
     
   )
 }
-
-function CreateNewForm (props){
-    const [isModalVisible, setIsModalVisible] = useState(false);
-    const {title} = props;
-    const showModal = () => {
-      setIsModalVisible(true);
-    };
-  
-    const handleOk = () => {
-      setIsModalVisible(false);
-    };
-  
-    const handleCancel = () => {
-      setIsModalVisible(false);
-    };
-
-    function onChangeSwitch(checked) {
-      console.log(`switch to ${checked}`);
-    }
-
+function  CreateNewForm({ isOpen, setIsOpen, title}) {
    
-    return (
-      <>
-        <Button className='modal'  
-          type="primary" 
-          onClick={showModal} 
-         
-          icon={<AddCircleOutlineOutlinedIcon />} >
-            
-            {title}
-        </Button>
-        
-        <Modal title="Tạo mới" 
-          visible={isModalVisible} 
+   
+  const handleOk = () => {
+    setIsOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsOpen(false);
+  };
+
+
+  function onChangeSwitch(checked) {
+    console.log(`switch to ${checked}`);
+  }
+ 
+    return(
+
+      <Modal title={title}
+          visible={isOpen  } 
           closable='true'
           onOk={handleOk}
           onCancel={handleCancel}
@@ -148,9 +128,8 @@ function CreateNewForm (props){
                 </div>
            
         </Modal>
-      </>
-    );
-
+    )
 }
+
 
 export default CreateNewForm;

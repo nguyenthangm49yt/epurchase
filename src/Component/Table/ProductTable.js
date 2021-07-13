@@ -81,7 +81,7 @@ for (let i = 0; i < dataProduct.length; i++) {
     key: i,
     name: <Name name={dataProduct[i].name} 
             productCode={dataProduct[i].productCode + i} 
-            pathImg= {process.env.PUBLIC_URL + "/images/product1.png"}>
+            pathImg= {process.env.PUBLIC_URL + "/images/product2.png"}>
               
           </Name>,
     type: <NormalCell title={dataProduct[i].type} subtitle={dataProduct[i].typeDescription}/>,
