@@ -271,7 +271,7 @@ class ProductGroups extends React.Component{
     }
     
  
-    
+  // hiển thị
   render(){
       const treeData = generate_data_tree(this.state.data) 
       const loop = data => (
